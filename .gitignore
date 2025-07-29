@@ -155,49 +155,26 @@ cython_debug/
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be added to the global gitignore or merged into this project gitignore.  For a PyCharm
-#  project, it is recommended to use the following settings:
-#  https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-.idea/
-*.swp
-*.swo
+#  project, it is recommended to include the following files:
+#  .idea/
+#  *.iml
+#  *.ipr
 
 # VS Code
 .vscode/
 
-# macOS
-.DS_Store
+# Media files (uploaded files)
+media/uploads/
 
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Media files
-media/
-
-# Static files (collected)
-staticfiles/
-
-# Test files
-test_email_send.py
-
-# Local development
-*.sqlite3
-*.db
-
-# Logs
-*.log
+# Log files
 logs/
-
-# Temporary files
-*.tmp
-*.temp
+*.log
 
 # IDE files
-.vscode/
 .idea/
-*.sublime-*
+*.swp
+*.swo
+*~
 
 # OS generated files
 .DS_Store
@@ -207,3 +184,19 @@ logs/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test files
+test_*.py
+debug_*.py
+create_test_*.py
+setup_*.py
+
+# Documentation files that are not needed
+*.md.backup
+邮件*.md
+tsc.md
+requir.md
